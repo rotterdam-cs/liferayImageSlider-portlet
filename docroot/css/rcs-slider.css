@@ -1,0 +1,103 @@
+/*
+ * jQuery RCS Slider v1.6.2.2
+ * http://www,rotterdam-cs.com
+ *
+ * Copyright 2011, Gilbert Pellegrom
+ * Free to use and abuse under the MIT license.
+ * http://www.opensource.org/licenses/mit-license.php
+ * 
+ * March 2010
+ */ /* The RCS Slider styles */
+.rcsSlider {
+	position: relative;
+}
+
+.rcsSlider img {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+
+/* If an image is wrapped in a link */
+.rcsSlider a.rcs-imageLink {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	border: 0;
+	padding: 0;
+	margin: 0;
+	z-index: 6;
+	display: none;
+}
+
+/* The slices and boxes in the Slider */
+.rcs-slice {
+	display: block;
+	position: absolute;
+	z-index: 5;
+	height: 100%;
+}
+
+.rcs-box {
+	display: block;
+	position: absolute;
+	z-index: 5;
+}
+
+/* Caption styles */
+.rcs-caption {
+	position: absolute;
+	left: 0px;
+	bottom: 0px;
+	background: #000;
+	color: #fff;
+	opacity: 0.8; /* Overridden by captionOpacity setting */
+	width: 100%;
+	z-index: 8;
+}
+
+.rcs-caption p {
+	padding: 5px;
+	margin: 0;
+}
+
+.rcs-caption a {
+	display: inline !important;
+}
+
+.rcs-html-caption {
+	display: none;
+}
+
+/* Direction nav styles (e.g. Next & Prev) */
+.rcs-directionNav a {
+	position: absolute;
+	top: 45%;
+	z-index: 9;
+	cursor: pointer;
+}
+
+.rcs-prevNav {
+	left: 0px;
+}
+
+.rcs-nextNav {
+	right: 0px;
+}
+
+/* Control nav styles (e.g. 1,2,3...) */
+.rcs-controlNav a {
+	position: relative;
+	z-index: 9;
+	cursor: pointer;
+}
+
+.rcs-controlNav a.active {
+	font-weight: bold;
+}
+
+.clear {
+	clear: both;
+}
