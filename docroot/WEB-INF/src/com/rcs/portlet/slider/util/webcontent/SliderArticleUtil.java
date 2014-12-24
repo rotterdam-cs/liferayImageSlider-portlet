@@ -115,7 +115,7 @@ public class SliderArticleUtil {
 			if (ddmStructureKey != null) {
 				allStructureArticles = JournalArticleLocalServiceUtil.getStructureArticles(groupId, ddmStructureKey);
 			} else {
-				_log.error("Can not get ddmStructureKey.");
+				_log.info("Can not get ddmStructureKey.");
 				allStructureArticles = new ArrayList<JournalArticle>();
 			}
         } catch (SystemException e) {
